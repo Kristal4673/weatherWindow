@@ -1,34 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Window</title>
+        <!--Bootstrap CSS CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- Font Awesome CSS Icons (For cool glyphicons) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-
     <!--Title and Banner -->
+    <header> <strong>WeatherWindow Dashboard <strong></header>
 
-    <!--Search for any City and gather current data -->
+    <div class="main">
+        <!--Search for any City and gather current data -->
+        <div class="page">
+            <div class="col-sm-3">
+                <!--input form html handle  -->
+                <h3 class="pt-0"> <em> Search City Name:</em>
+                    <h3>
+                        <!--creating a searchbox to retain the name that we inputted mb= margin bottom-->
+                        <div class=" input-group mb-4">
+                            <input type="text" class="input" id="citySearch">
+                            <div>
+                                <button id="btnSearch" type="btn"></button>
+                            </div>
+                        </div>
+                        <!--search history area-->
+                        <button class="btn" type="btn" id="btnClear"> Clear Info</button>
+                        <ul class="list-group">
 
+                        </ul>
+            </div>
+            <div class="col-md-5">
+                <div class="row ">
+                    <div class="col-sm-10 " id="weatherCurrent">
+                        <h3 class="nameCity" id="cityCurrent"></h3>
+                        <p>Temperature:<span class="current" id="tempCurrent"></span></p>
+                        <p>Humidity:<span class="current" id="humidityCurrent"></span></p>
+                        <p>Wind Speed:<span class="current" id="windSpeedCurrent"></span></p>
+                        <p>UV index:<span class="current" id="indexUV"></span></p>
+                    </div>
+                </div>
+                <!--Gathering future day for 5 day cast -->
+                <div class="col-sm-10" id="fiveDay_Weather">
+                    <h3> 5 Day Forecast</h3>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <p id="5Date0"></p>
+                            <p id="5IDK0"></p>
+                            <p> Temperature: <span id="5Temp0"> </span></p>
+                            <p> Humidity: <span id="5humidity0"> </span></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p id="5Date1"></p>
+                            <p id="5IDK1"></p>
+                            <p> Temperature: <span id="5Temp1"> </span></p>
+                            <p> Humidity: <span id="5humidity1"> </span></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p id="5Date2"></p>
+                            <p id="5IDK2"></p>
+                            <p> Temperature: <span id="5Temp2"> </span></p>
+                            <p> Humidity: <span id="5humidity2"> </span></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p id="5Date3"></p>
+                            <p id="5IDK3"></p>
+                            <p> Temperature: <span id="5Temp3"> </span></p>
+                            <p> Humidity: <span id="5humidity3"> </span></p>
+                        </div>
+                        <div class="col-sm-3">
+                            <p id="5Date4"></p>
+                            <p id="5IDK4"></p>
+                            <p> Temperature: <span id="5Temp4"> </span></p>
+                            <p> Humidity: <span id="5humidity4"> </span></p>
+                        </div>
+                    </div>
+                    <div>
 
-    
-    
-    
-    
-    
-    
-    
-    <!--Gathering future day for 5 day cast -->
-
-
-
-
-    <!--Title -->
-
-
-    <!--script links  -->
-    
+                    </div>
+                </div>
+                <!--jquery  -->
+                <script src="https://code.jquery.com/jquery.js"></script>
+                <script
+                    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+                <!--Code to Jvascript File-->
+                <script src="script.js"></script>
 </body>
+
 </html>

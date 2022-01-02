@@ -3,8 +3,8 @@
 var city = "";
 // variable declaration
 var citySearch = $("#citySearch");
-var clearButton = $("#btnSearch");
-var clearButton = $("#btnClear");
+var btnSearch = $("#btnSearch");
+var btnClear = $("#btnClear");
 var cityCurrent = $("#cityCurrent");
 var tempCurrent = $("#tempCurrent");
 var humidityCurrent = $("#humidityCurrent");
